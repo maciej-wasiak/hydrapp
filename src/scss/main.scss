@@ -13,6 +13,14 @@ body {
   min-height: 100vh;
 }
 
+.main-view {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
 .header {
   font-weight: 700;
   text-align: center;
@@ -21,6 +29,9 @@ body {
 
 .glass {
   position: relative;
+  &__image {
+    width: 100%;
+  }
   &__quantity {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -53,6 +64,30 @@ body {
     font-weight: 300;
     background: none;
     border: none;
+    cursor: pointer;
+  }
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10vh;
+  &__table {
+    border: 1px solid white;
+    border-radius: 8px;
+  }
+  &__table th, &__table td {
+    padding: 0.5em 1em;
+  }
+  &__refresh--js {
+    font-weight: 300;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+    margin-top: 48px;
     cursor: pointer;
   }
 }

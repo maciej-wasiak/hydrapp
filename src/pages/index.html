@@ -19,14 +19,25 @@
   </head>
   <body>
     <main>
-      <h1 class="header">HydrApp</h1>
-      <section class="glass">
-        <img class="glass__image" src="../assets/img/water-glass.svg" alt="glass of water">
-        <span class="glass__quantity glass__quantity--js">0</span>
+      <section class="main-view">
+        <h1 class="header">HydrApp</h1>
+        <article class="glass">
+          <img class="glass__image" src="../assets/img/water-glass.svg" alt="glass of water">
+          <span class="glass__quantity glass__quantity--js">0</span>
+        </article>
+        <article class="button">
+          <button class="button__add button__add--js">Dodaj Szklankę</button>
+          <button class="button__remove button__remove--js">Odejmij Szklankę</button>
+        </article>
       </section>
-      <section class="button">
-        <button class="button__add button__add--js">Dodaj Szklankę</button>
-        <button class="button__remove button__remove--js">Odejmij Szklankę</button>
+      <section class="history">
+        <table class="history__table history__table--js">
+          <tr>
+            <th>Data</th>
+            <th>Ilość</th>
+          </tr>
+        </table>
+        <button class="history__refresh history__refresh--js">Odśwież</button>
       </section>
     </main>
   </body>
